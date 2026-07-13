@@ -34,12 +34,13 @@ export const streamConfig = {
   youtubeVideoId: "_8ll2o5aPhA",
 
   /**
+
    * URL of your .m3u8 HLS stream. Only used when streamType is "hls".
    * Use this ONLY for a stream you own or are licensed to broadcast.
    */
 
 
-  hlsUrl: "https://cors-proxy.cooks.fyi/http://190.11.225.124:5000/live/fs1_hd/playlist.m3u8"
+  hlsUrl: "https://thm-it-roku.otteravision.com/thm/it/it.m3u8"
 
 ,
 
