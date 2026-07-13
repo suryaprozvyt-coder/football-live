@@ -1,4 +1,3 @@
-cat > /home/claude/football-live/src/components/LivePlayer.tsx << 'EOF'
 "use client";
 
 import { streamConfig } from "@/lib/config";
@@ -43,8 +42,3 @@ export default function LivePlayer() {
     </div>
   );
 }
-EOF
-echo done
-Output
-
-done
