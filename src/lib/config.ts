@@ -23,10 +23,11 @@ export const streamConfig = {
   /**
    * The ID of your YouTube LIVE video (not the channel ID).
    * Example: for https://www.youtube.com/watch?v=dQw4w9WgXcQ the ID is "dQw4w9WgXcQ"
+
    *
    * Leave as-is for a placeholder / offline state until you add your own.
    */
-  youtubeVideoId: "jfKfPfyJRdk",
+  youtubeVideoId: "_8ll2o5aPhA",
 
   /**
    * Manual override: set to false to force the "offline" state on the Live
