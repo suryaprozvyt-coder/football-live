@@ -55,7 +55,7 @@ export default function RootLayout({
           Skip to content
         </a>
         <Navbar />
-        />
+
         <Script
           src="https://pl30350130.effectivecpmnetwork.com/75/e2/6e/75e26ed1b9aac8120a35c24b61e1a67a.js"
           strategy="afterInteractive"
