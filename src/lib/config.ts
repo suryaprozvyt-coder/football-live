@@ -36,8 +36,9 @@ export const streamConfig = {
    * URL of your .m3u8 HLS stream. Only used when streamType is "hls".
    * Use this ONLY for a stream you own or are licensed to broadcast.
    */
-  hlsUrl: "https://amg19223-amg19223c3-amgplt0351.playout.now3.amagi.tv/playlist/amg19223-amg19223c3-amgplt0351/playlist.m3u8"
+  hlsUrl: "https://thm-it-roku.otteravision.com/thm/it/it.m3u8https://thm-it-roku.otteravision.com/thm/it/it.m3u8"
 ,
+
 
   /**
    * Manual override: set to false to force the "offline" state on the Live
@@ -49,7 +50,7 @@ export const streamConfig = {
    * Password required to view the Live page. Change this to whatever you
    * want. Leave as an empty string ("") to turn password protection off.
    */
-  livePassword: "changeme",
+  livePassword: "1",
 };
 
 /**
