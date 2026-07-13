@@ -39,7 +39,8 @@ export const streamConfig = {
    */
 
 
-  hlsUrl: "https://stream.livenewsplay.com:9443/hls/foxnews/foxsd.m3u8"
+  hlsUrl: "https://cors-proxy.cooks.fyi/http://190.11.225.124:5000/live/fs1_hd/playlist.m3u8"
+
 ,
 
 
