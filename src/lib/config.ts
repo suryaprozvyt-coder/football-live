@@ -23,8 +23,7 @@ export const streamConfig = {
   /**
    * Which player to use on the Live page: "youtube" or "hls".
    */
-  streamType: "hls",
-  
+  streamType: "youtube" as "youtube" | "hls",
 
   /**
    * The ID of your YouTube LIVE video (not the channel ID).
@@ -34,16 +33,10 @@ export const streamConfig = {
   youtubeVideoId: "_8ll2o5aPhA",
 
   /**
-
    * URL of your .m3u8 HLS stream. Only used when streamType is "hls".
    * Use this ONLY for a stream you own or are licensed to broadcast.
    */
-
-
-  hlsUrl: "https://thm-it-roku.otteravision.com/thm/it/it.m3u8"
-
-,
-
+  hlsUrl: "",
 
   /**
    * Manual override: set to false to force the "offline" state on the Live
@@ -55,5 +48,32 @@ export const streamConfig = {
    * Password required to view the Live page. Change this to whatever you
    * want. Leave as an empty string ("") to turn password protection off.
    */
-  livePassword: "26",
+  livePassword: "changeme",
 };
+
+/**
+ * Manually managed match schedule shown on the Home page.
+ * Add, remove, or edit entries here — just follow the same format.
+ * "status" controls the small tag shown next to the match:
+ *   "upcoming" | "live" | "finished"
+ */
+export const scheduleConfig = [
+  {
+    id: "match-1",
+    competition: "Friendly",
+    homeTeam: "Team A",
+    awayTeam: "Team B",
+    date: "2026-07-20",
+    time: "18:00",
+    status: "upcoming" as "upcoming" | "live" | "finished",
+  },
+  {
+    id: "match-2",
+    competition: "Friendly",
+    homeTeam: "Team C",
+    awayTeam: "Team D",
+    date: "2026-07-27",
+    time: "19:30",
+    status: "upcoming" as "upcoming" | "live" | "finished",
+  },
+];
