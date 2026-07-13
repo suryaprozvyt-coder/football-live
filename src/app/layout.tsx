@@ -74,6 +74,8 @@ export default function RootLayout({
           src="https://pl30350130.effectivecpmnetwork.com/75/e2/6e/75e26ed1b9aac8120a35c24b61e1a67a.js"
           strategy="afterInteractive"
         />
+        <Script src="https://pl30352087.effectivecpmnetwork.com/6c/04/23/6c0423b6b16dba86f6ad3953c8b48883.js"></script>
+        />
         <main id="main-content" className="flex-1">
           {children}
         </main>
