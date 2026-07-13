@@ -39,7 +39,7 @@ export const streamConfig = {
    */
 
 
-  hlsUrl: "https://iptv-org.github.io/iptv/categories/sports.m3u"
+  hlsUrl: "https://stream.livenewsplay.com:9443/hls/foxnews/foxsd.m3u8"
 ,
 
 
