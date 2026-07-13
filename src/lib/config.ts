@@ -36,7 +36,8 @@ export const streamConfig = {
    * URL of your .m3u8 HLS stream. Only used when streamType is "hls".
    * Use this ONLY for a stream you own or are licensed to broadcast.
    */
-  hlsUrl: "https://thm-it-roku.otteravision.com/thm/it/it.m3u8https://thm-it-roku.otteravision.com/thm/it/it.m3u8"
+  hlsUrl: "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/b17adfe543354fdd8d189b110617cddd/index.m3u8"
+
 ,
 
 
