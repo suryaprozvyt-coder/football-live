@@ -23,7 +23,7 @@ export const streamConfig = {
   /**
    * Which player to use on the Live page: "youtube" or "hls".
    */
-  streamType: "youtube" as "youtube" | "hls",
+  streamType: "hls",
 
   /**
    * The ID of your YouTube LIVE video (not the channel ID).
@@ -36,7 +36,8 @@ export const streamConfig = {
    * URL of your .m3u8 HLS stream. Only used when streamType is "hls".
    * Use this ONLY for a stream you own or are licensed to broadcast.
    */
-  hlsUrl: "",
+  hlsUrl: "https://amg19223-amg19223c3-amgplt0351.playout.now3.amagi.tv/playlist/amg19223-amg19223c3-amgplt0351/playlist.m3u8"
+,
 
   /**
    * Manual override: set to false to force the "offline" state on the Live
