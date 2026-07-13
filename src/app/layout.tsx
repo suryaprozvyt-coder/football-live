@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Oswald } from "next/font/google";
+import Script from "next/script";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { siteConfig } from "@/lib/config";
@@ -54,34 +55,21 @@ export default function RootLayout({
           Skip to content
         </a>
         <Navbar />
-
-        <body className="flex min-h-screen flex-col bg-base-black font-body text-white antialiased">
-  <a href="#main-content" className="sr-only focus:not-sr-only ...">
-    Skip to content
-  </a>
-  <Navbar />
-  
-  {/* Ad script yahan daal sakte hain */}
-  <script
-    dangerouslySetInnerHTML={{
-      __html: `
-        atOptions = {
-          'key' : 'd96301e33b263e8cb961725c6069cd78',
-          'format' : 'iframe',
-          'height' : 300,
-          'width' : 160,
-          'params' : {}
-        };
-      `,
-    }}
-  />
-  <script src="https://www.highperformanceformat.com/d96301e33b263e8cb961725c6069cd78/invoke.js" />
-
-  <main id="main-content" className="flex-1">
-    {children}
-  </main>
-  <Footer />
-</body>
+        <Script id="ad-options" strategy="afterInteractive">
+          {`
+            atOptions = {
+              'key' : 'd96301e33b263e8cb961725c6069cd78',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+          `}
+        </Script>
+        <Script
+          src="https://www.highperformanceformat.com/d96301e33b263e8cb961725c6069cd78/invoke.js"
+          strategy="afterInteractive"
+        />
         <main id="main-content" className="flex-1">
           {children}
         </main>
