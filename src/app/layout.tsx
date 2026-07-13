@@ -54,6 +54,34 @@ export default function RootLayout({
           Skip to content
         </a>
         <Navbar />
+
+        <body className="flex min-h-screen flex-col bg-base-black font-body text-white antialiased">
+  <a href="#main-content" className="sr-only focus:not-sr-only ...">
+    Skip to content
+  </a>
+  <Navbar />
+  
+  {/* Ad script yahan daal sakte hain */}
+  <script
+    dangerouslySetInnerHTML={{
+      __html: `
+        atOptions = {
+          'key' : 'd96301e33b263e8cb961725c6069cd78',
+          'format' : 'iframe',
+          'height' : 300,
+          'width' : 160,
+          'params' : {}
+        };
+      `,
+    }}
+  />
+  <script src="https://www.highperformanceformat.com/d96301e33b263e8cb961725c6069cd78/invoke.js" />
+
+  <main id="main-content" className="flex-1">
+    {children}
+  </main>
+  <Footer />
+</body>
         <main id="main-content" className="flex-1">
           {children}
         </main>
