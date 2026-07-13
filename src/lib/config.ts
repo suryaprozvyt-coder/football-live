@@ -23,7 +23,6 @@ export const streamConfig = {
   /**
    * The ID of your YouTube LIVE video (not the channel ID).
    * Example: for https://www.youtube.com/watch?v=dQw4w9WgXcQ the ID is "dQw4w9WgXcQ"
-
    *
    * Leave as-is for a placeholder / offline state until you add your own.
    */
@@ -34,4 +33,10 @@ export const streamConfig = {
    * page even if a video ID is present (useful before/after a broadcast).
    */
   isLive: true,
+
+  /**
+   * Password required to view the Live page. Change this to whatever you
+   * want. Leave as an empty string ("") to turn password protection off.
+   */
+  livePassword: "goat26",
 };
