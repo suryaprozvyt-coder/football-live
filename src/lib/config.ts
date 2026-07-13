@@ -48,5 +48,5 @@ export const streamConfig = {
    * Password required to view the Live page. Change this to whatever you
    * want. Leave as an empty string ("") to turn password protection off.
    */
-  livePassword: "26",
+  livePassword: "changeme",
 };
