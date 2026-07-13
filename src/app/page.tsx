@@ -1,6 +1,5 @@
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
-import Schedule from "@/components/Schedule";
 import { siteConfig } from "@/lib/config";
 
 export default function HomePage() {
@@ -70,8 +69,6 @@ export default function HomePage() {
           </div>
         </Container>
       </section>
-
-      <Schedule />
     </>
   );
 }
