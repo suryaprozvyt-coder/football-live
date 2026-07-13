@@ -59,6 +59,18 @@ export default function RootLayout({
         <Script
           src="https://pl30350130.effectivecpmnetwork.com/75/e2/6e/75e26ed1b9aac8120a35c24b61e1a67a.js"
           strategy="afterInteractive"
+
+          <script>
+  atOptions = {
+    'key' : '78d996c82d2e698731f371da4f5324d5',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/78d996c82d2e698731f371da4f5324d5/invoke.js"></script>
+
         />
         <main id="main-content" className="flex-1">
           {children}
