@@ -21,16 +21,26 @@ export const siteConfig = {
 
 export const streamConfig = {
   /**
+   * Which player to use on the Live page: "youtube" or "hls".
+   */
+  streamType: "youtube" as "youtube" | "hls",
+
+  /**
    * The ID of your YouTube LIVE video (not the channel ID).
    * Example: for https://www.youtube.com/watch?v=dQw4w9WgXcQ the ID is "dQw4w9WgXcQ"
-   *
-   * Leave as-is for a placeholder / offline state until you add your own.
+   * Only used when streamType is "youtube".
    */
   youtubeVideoId: "_8ll2o5aPhA",
 
   /**
+   * URL of your .m3u8 HLS stream. Only used when streamType is "hls".
+   * Use this ONLY for a stream you own or are licensed to broadcast.
+   */
+  hlsUrl: "",
+
+  /**
    * Manual override: set to false to force the "offline" state on the Live
-   * page even if a video ID is present (useful before/after a broadcast).
+   * page even if a video ID / HLS URL is present (useful before/after a broadcast).
    */
   isLive: true,
 
@@ -38,5 +48,5 @@ export const streamConfig = {
    * Password required to view the Live page. Change this to whatever you
    * want. Leave as an empty string ("") to turn password protection off.
    */
-  livePassword: "goat26",
+  livePassword: "26",
 };
