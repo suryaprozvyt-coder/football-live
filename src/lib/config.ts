@@ -37,7 +37,9 @@ export const streamConfig = {
    * URL of your .m3u8 HLS stream. Only used when streamType is "hls".
    * Use this ONLY for a stream you own or are licensed to broadcast.
    */
-  hlsUrl: "https://royalstarindia.co.in/pularitv_hls/pularitv.m3u8"
+
+
+  hlsUrl: "https://iptv-org.github.io/iptv/categories/sports.m3u"
 ,
 
 
