@@ -1,11 +1,16 @@
+cat > /home/claude/football-live/src/components/LivePlayer.tsx << 'EOF'
 "use client";
 
 import { streamConfig } from "@/lib/config";
+import HlsPlayer from "@/components/HlsPlayer";
 
 export default function LivePlayer() {
-  const { youtubeVideoId, isLive } = streamConfig;
+  const { streamType, youtubeVideoId, hlsUrl, isLive } = streamConfig;
 
-  if (!isLive || !youtubeVideoId) {
+  const hasSource =
+    streamType === "youtube" ? Boolean(youtubeVideoId) : Boolean(hlsUrl);
+
+  if (!isLive || !hasSource) {
     return (
       <div
         className="flex aspect-video w-full flex-col items-center justify-center gap-3 rounded-lg border border-white/10 bg-base-gray px-6 text-center"
@@ -22,6 +27,10 @@ export default function LivePlayer() {
     );
   }
 
+  if (streamType === "hls") {
+    return <HlsPlayer src={hlsUrl} />;
+  }
+
   return (
     <div className="aspect-video w-full overflow-hidden rounded-lg border border-white/10 bg-black">
       <iframe
@@ -34,3 +43,8 @@ export default function LivePlayer() {
     </div>
   );
 }
+EOF
+echo done
+Output
+
+done
