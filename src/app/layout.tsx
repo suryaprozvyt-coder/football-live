@@ -55,9 +55,7 @@ export default function RootLayout({
           Skip to content
         </a>
         <Navbar />
-
         <script src="https://pl30350130.effectivecpmnetwork.com/75/e2/6e/75e26ed1b9aac8120a35c24b61e1a67a.js"></script>
-
         />
         <main id="main-content" className="flex-1">
           {children}
