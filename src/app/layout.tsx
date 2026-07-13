@@ -55,7 +55,21 @@ export default function RootLayout({
           Skip to content
         </a>
         <Navbar />
-
+        <Script id="ad-options" strategy="afterInteractive">
+          {`
+            atOptions = {
+              'key' : 'd96301e33b263e8cb961725c6069cd78',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+          `}
+        </Script>
+        <Script
+          src="https://www.highperformanceformat.com/d96301e33b263e8cb961725c6069cd78/invoke.js"
+          strategy="afterInteractive"
+        />
         <Script
           src="https://pl30350130.effectivecpmnetwork.com/75/e2/6e/75e26ed1b9aac8120a35c24b61e1a67a.js"
           strategy="afterInteractive"
