@@ -80,4 +80,14 @@ export const scheduleConfig = [
     time: "19:30",
     status: "upcoming" as "upcoming" | "live" | "finished",
   },
+  {
+  id: "match-3",              // har match ka alag number
+  competition: "League",       // tournament ka naam
+  homeTeam: "Your Team",       // ghar wali team
+  awayTeam: "Opponent",        // doosri team
+  date: "2026-08-05",           // YYYY-MM-DD format mein
+  time: "20:00",                // 24-hour format
+  status: "upcoming" as "upcoming" | "live" | "finished",
+},
+
 ];
