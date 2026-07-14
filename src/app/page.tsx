@@ -70,6 +70,7 @@ export default function HomePage() {
           </div>
         </Container>
       </section>
+      <Schedule />
     </>
   );
 }
