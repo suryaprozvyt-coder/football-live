@@ -1,6 +1,7 @@
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import { siteConfig } from "@/lib/config";
+import Schedule from "@/components/Schedule";
 
 export default function HomePage() {
   return (
