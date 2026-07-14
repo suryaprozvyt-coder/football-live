@@ -65,10 +65,11 @@ export const scheduleConfig = [
   {
     id: "match-1",
     competition: "Friendly",
-    homeTeam: "Team A",
-    awayTeam: "Team B",
-    date: "2026-07-20",
-    time: "18:00",
+    homeTeam: "France 🟦⬜🟥"
+,
+    awayTeam: "🇪🇸",
+    date: "2026-07-15",
+    time: "time zone",
     status: "upcoming" as "upcoming" | "live" | "finished",
   },
   {
